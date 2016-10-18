@@ -15,8 +15,11 @@ public class MainTaller {
         Taller taller = new Taller();
 
         taller.registrarReparacion(jose, Jaguar);
+
         taller.registrarReparacion(maria, BMW);
+
         taller.registrarReparacion(carlos, Lexus);
+
         taller.registrarReparacion(anna, Austin);
 
         System.out.println(taller.obtenerCoche(jose));

@@ -23,9 +23,9 @@ class MainVehiculos {
 
         registro.obtenerVehiculosMarca("Lexus").forEach(coche -> System.out.println(coche));
 
-        registro.obtenerVehiculoPrecioMax().ifPresent(coche -> System.out.println("Coche Max precio: " + coche));
+        registro.obtenerVehiculoPrecioMax().ifPresent(coche -> System.out.println("Coche con el precio mas alto: " + coche));
 
-        System.out.println("Eliminando coche con matricula 1234ENG");
+        System.out.println("coche con matricula 1234ENG eliminado!");
 
         registro.eliminarVehiculo("1234ENG");
 

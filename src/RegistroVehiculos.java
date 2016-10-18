@@ -10,9 +10,9 @@ public class RegistroVehiculos {
 
     public Optional<Coche> obtenerVehiculo(String matricula){
         Coche cocheRetornar = null;
-        for (Coche c: coches){
-            if (c.getMatricula().equals(matricula)){
-                cocheRetornar = c;
+        for (Coche asdf: coches){
+            if (asdf.getMatricula().equals(matricula)){
+                cocheRetornar = asdf;
             }
         }
         if (cocheRetornar != null)
@@ -22,13 +22,13 @@ public class RegistroVehiculos {
     }
 
     public void eliminarVehiculo(String matricula){
-        Coche a = null;
-        for (Coche c: coches){
-            if (c.getMatricula().equals(matricula)){
-                a = c;
+        Coche abc = null;
+        for (Coche asdf: coches){
+            if (asdf.getMatricula().equals(matricula)){
+                abc = asdf;
             }
         }
-        coches.remove(a);
+        coches.remove(abc);
     }
 
     public Optional<Coche> obtenerVehiculoPrecioMax(){
